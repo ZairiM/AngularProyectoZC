@@ -21,7 +21,7 @@ export class GitSearchUserComponent implements OnInit {
    }
  
  gitSearch =()=>{
-   this.GitSearchService.gitSearch(this.searchQuery).then((response)=>{
+   this.GitSearchService.gitSearchUser(this.searchQuery).then((response)=>{
      this.searchResults = response;
      this.displayQuery= this.searchQuery;
      //alert('Total repositories found: '+response.total_count);
